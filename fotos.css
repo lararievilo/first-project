@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Playfair+Display&family=Signika&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 5, 9);
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    background-color: black;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .5s;
+    font-family: 'Monoton', cursive;
+}
+
+li:hover {
+    color: #6db8cc;
+}
+
+#logo {
+    width: 85px;
+    height: 80px;
+    background-color: transparent;
+}
+
+#logo2 {
+    width: 85px;
+    height: 80px;
+    margin-top: 70px;
+}
+
+.actor-photos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photos-content {
+    width: 90%;
+    margin-top: 70px;
+    background-position: 50% 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.banner1 {
+    background-image: url('./programação/ariel\ na\ agua.jpg');
+}
+
+.banner2 {
+    background-image: url('./programação/ariel\ e\ eric.jpg');
+}
+
+.banner3 {
+    background-image: url('./programação/prince.jpg');
+}
+
+.banner4 {
+    background-image: url('./programação/6475236d085acb0018fed555.jpg');
+}
+
+.banner5 { 
+    background-image: url('./programação/d9a00c38-8f30-4eab-a0d1-9aad3a363224.jpg');
+}
+
+.banner6 {
+    background-image: url('./programação/ursula.jpg');
+}
+
+.banner7 {
+    background-image: url('./programação/62cfc5e2-1192-460a-bab3-dd7fa86c16f2.jpg');
+}
+
+.banner8 {
+    background-image: url('./programação/b89af85e-f771-4d5d-a5fa-9b30455ae1e9.jpg');
+}
+
+.banner9 {
+    background-image: url('./programação/f3dca8eb-0996-4fd5-8ade-00cd3e563ef9.jpg');
+}
+
+.photo {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.photo:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #6db8cc;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media(max-width: 768px) {
+
+    .footer-navigation {
+        display: block;
+    }
+
+    ul {
+        background-color: transparent;
+    }
+
+    li {
+        background-color: transparent;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .photos-content {
+        width: 90%;
+        margin-top: 70px;
+        background-position: 50% 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+}
